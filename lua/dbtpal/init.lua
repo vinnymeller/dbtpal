@@ -48,5 +48,5 @@ vim.api.nvim_create_user_command("DbtBuild", function() main.build() end, { narg
 vim.api.nvim_set_keymap("n", "<leader>dr", ":lua require('dbtpal').run()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>dt", ":lua require('dbtpal').test()<CR>", { noremap = true, silent = true })
 
-M.dbt_picker = require("dbtpal.telescope").dbt_picker
+-- M.dbt_picker = require("dbtpal.telescope").dbt_picker
 return M
